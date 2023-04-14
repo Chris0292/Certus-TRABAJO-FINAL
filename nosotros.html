@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <!-- Incluye el archivo CSS de Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Incluye el archivo CSS de Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <!-- Incluye el archivo JS de Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+  <title>6 Strings</title>
+
+</head>
+
+<body>
+
+  <!--Encabezado para anuncios-->
+
+  <div class="text-center bg-black p-3">ENVÍO GRATIS POR COMPRAS MAYORES A S/99 CON EL CÓDIGO STR99,
+    VÁLIDO PARA LIMA METROPOLITANA - DE 2 A 3 DÍAS HÁBILES
+  </div>
+
+  <!--Barra de navegación-->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/6 Strings logo.png" alt="Bootstrap" width="270" height="60">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contáctanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--Carrito de compras-->
+      <div class="btn btn-primary">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal"> Mi Carrito
+              <i class="bi bi-cart mx-5" id="carritoContenedor">0</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Ver carrito de compras-->
+  <div class="container-xl">
+    <div class="modal" tabindex="-1" role="dialog" id="modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Carrito</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" id="vaciarCarrito">
+              Vaciar carrito
+            </button>
+            <button type="button" id="procesarCompra" class="btn btn-primary">
+              Continuar compra
+            </button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+
+            <span>Precio total:</span>
+            <p class="text-center" id="precioTotal"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Acerca de nosotros-->
+  <div class="container">
+    <header class="text-center text-dark">
+      <h1>¿Quienes somos?</h1>
+    </header>
+    <p class="px-15" style="text-align: justify;">
+      En "6 Strings", somos un equipo apasionado por la música y las guitarras. Nos enorgullece ofrecer una
+      amplia selección de guitarras de alta calidad para músicos de todos los niveles y presupuestos.
+
+      Nuestra misión es proporcionar a nuestros clientes una experiencia de compra excepcional. Nos esforzamos por
+      ofrecer un servicio al cliente de primer nivel, asesoramiento experto y precios competitivos en todas nuestras
+      guitarras.
+    </p>
+    <p>
+      Además de nuestra selección de guitarras, también ofrecemos una amplia variedad de accesorios y equipos para
+      guitarristas. Desde cuerdas y púas hasta amplificadores y efectos, tenemos todo lo que necesitas para llevar tu
+      música al siguiente nivel.
+      Ya seas un principiante o un músico experimentado, estamos aquí para ayudarte en tu viaje musical. No dudes en
+      contactarnos si tienes alguna pregunta o necesitas asesoramiento en la compra de tu próxima guitarra. ¡Gracias por
+      visitarnos!
+    </p>
+  </div>
+
+  <!--Redes sociales-->
+  <div class="container text-center text-dark">
+    <h1>Síguenos en redes:</h1>
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x social-icon"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x social-icon twitter"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i
+          class="fab fa-instagram fa-2x social-icon instagram"></i></a>
+    </div>
+  </div>
+
+  <!--Footer -->
+  <footer class="container my-5">
+    <div class="footer container">
+      <div class="stores">
+        <span class="ourstores">
+          <strong>Nuestras tiendas</strong>
+        </span>
+        <ul>
+          <li>Av. Santiago de Surco N°4717 - Surco</li>
+          <li>Av. Industrial N° 3733 - Independencia</li>
+        </ul>
+      </div>
+      <div class="suscribe">
+        <div class="card">
+          <span class="card__title">Subscribe</span>
+          <p class="card__content">Get fresh web design resources delivered straight to your inbox every week.
+          </p>
+          <div class="card__form">
+            <input placeholder="Your Email" type="text">
+            <button class="sign-up"> Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="additional information">
+      <span>© 2023 "6 Strings" Music Store</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

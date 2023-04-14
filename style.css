@@ -1,0 +1,272 @@
+.body {
+  background-color: #f2f2f2;
+}
+
+/*Encabezado para anuncios*/
+div.section.advises{
+  background-color: black;
+  color: black;
+  margin: 0;
+  align-items: center ;
+} 
+.text-center{
+  color: #e0e0e0;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  
+} 
+
+/*BARRA DE NAVEGACIÓN*/
+
+
+/*BOTON CARRITO DE COMPRAS*/
+
+.imagen{
+  max-width:100%;
+}
+
+a{
+  cursor:pointer;
+}
+.alerta{
+  font-weight:700;
+}
+body{
+  background-color: #E3D8D6;
+  overflow-x: hidden;
+}
+.modal-contenedor{
+  display:flex;
+  align-items: center;
+  gap:2rem;
+}
+.img-carrito{
+  width:200px;
+  padding:20px;
+} 
+.modal-content{
+  background-color: #E3D8D6;
+}
+.parrafo{
+  font-weight: 900;
+  font-style: italic;
+}
+#precioTotal{
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration: none;
+}
+.boton{
+  opacity:0;
+}
+/* Estilos para el slider */
+
+
+
+/*////////------Destacados----------/////*/
+.enunciado {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 24px;
+  padding-left: 15px;
+  padding-top: 20px;
+
+}
+
+/*////////-------Footer-------////////////*/
+footer {
+  display: block;
+}
+
+.footer.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer {
+padding-left: 100px;
+padding-right: 100px;
+}
+
+/*---------Footer->-Stores-----------*/
+.ourstores {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;  
+}
+
+.stores ul li {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*---------Footer->-Suscribe---------*/
+.card {
+  width: 240px;
+  height: 254px;
+  padding: 0 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.card > * {
+  margin: 0;
+}
+
+.card__title {
+  font-size: 23px;
+  font-weight: 900;
+  color: #333;
+}
+
+.card__content {
+  font-size: 13px;
+  line-height: 18px;
+  color: #333;
+}
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__form input {
+  margin-top: 10px;
+  outline: 0;
+  background: rgb(255, 255, 255);
+  box-shadow: transparent 0px 0px 0px 1px inset;
+  padding: 0.6em;
+  border-radius: 14px;
+  border: 1px solid #333;
+  color: black;
+}
+
+.card__form button {
+  border: 0;
+  background: #111;
+  color: #fff;
+  padding: 0.68em;
+  border-radius: 14px;
+  font-weight: bold;
+}
+
+.sign-up:hover {
+  opacity: 0.8;
+} 
+
+/*---------Footer->-Additional-------*/
+.additional {
+  text-align: center;
+  font-size: 12px;
+}
+
+
+
+
+/*-------------------------------------producto.html-----------------------------*/
+
+
+.price {
+  color: #00badb;
+  font-family: sans-serif;
+  margin: 10px;
+}
+
+
+/*-------------------------------------contacto.html-----------------------------*/
+
+.contact {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.contact-form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 10px;
+  display: block;
+}
+
+.contact-form label {
+  color: black;
+}
+
+.contact-form .heading {
+  font-size: 24px;
+  color: black;
+  ;
+  margin-bottom: 12px;
+  font-weight: bold;
+  display: block;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+  width: 200px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #405ace;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #2d30cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/*-------------------Nosotros-------------*/
+
+.social-icon {
+  margin-right: 10px; /* Espacio entre iconos */
+  color: #007bff; /* Color de iconos por defecto (azul) */
+}
+
+.twitter {
+  color: #1da1f2; /* Color de icono para Twitter (celeste) */
+}
+
+.instagram {
+  color: #e1306c; /* Color de icono para Instagram (rosado) */
+}
